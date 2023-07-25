@@ -6,11 +6,22 @@
     <title>Fruit Burst</title>
 
     <!-- goggle fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <style>
+      .font-lato{
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
 
     <!-- tailwind and daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/cfa6e6d1b8.js" crossorigin="anonymous"></script>
 
     <!-- custom colors -->
     <script>
@@ -19,6 +30,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-red': '#F85559',
               }
             }
           }
@@ -26,9 +38,50 @@
       </script>
 
 </head>
-<body>
+<body class="font-lato">
 
-    <header></header>
+    <header class="container mx-auto mt-8">
+
+      <nav>
+
+        <div class="navbar bg-primary-red rounded-full p-8">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-medium text-white">
+                <li><a>About Us</a></li>
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="navbar-center space-x-1">
+              <img src="./images/logo.png" alt="">
+              <p class="text-4xl text-white font-bold">Fruit Burst</p>
+          </div>
+
+          <div class="navbar-end">
+            <input type="search" placeholder="search here" name="" id="" class="p-5 outline-none pr-52 rounded-full text-[#121212]">
+          </div>
+        </div>
+
+      </nav>
+
+    </header>
 
     <main></main>
 
