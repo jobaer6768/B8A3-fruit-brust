@@ -31,7 +31,7 @@
               colors: {
                 clifford: '#da373d',
                 'primary-red': '#F85559',
-                'gradient-start': '#121212',
+                'dark-01': '#121212',
               }
             }
           }
@@ -45,7 +45,7 @@
 
       <nav>
 
-        <div class="navbar bg-primary-red rounded-full p-8">
+        <div class="navbar bg-primary-red rounded-full p-4">
           <div class="navbar-start">
             <div class="dropdown">
               <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -171,7 +171,143 @@
 
     </header>
 
-    <main></main>
+    <main class="container mx-auto">
+
+      <!-- deal of the day section -->
+      <section class="my-24">
+
+        <!-- header section -->
+        <div class="flex justify-between items-center">
+          <div class="space-y-6 flex-1">
+            <h2 class="text-dark-01 text-5xl font-extrabold">Deal of the day</h2>
+            <p class="text-dark-01 font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+
+          <div class="flex-1 flex justify-end gap-6 mr-6">
+
+            <div class="flex flex-col items-center">
+              <p class="text-dark-01 font-extrabold text-5xl">
+                29
+                <i class="fa-solid fa-ellipsis-vertical w-6 ml-5"></i>
+              </p>
+              <p class="text-dark-01 font-medium mr-12">Days</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <p class="text-dark-01 font-extrabold text-5xl">
+                15 
+                <i class="fa-solid fa-ellipsis-vertical w-6 ml-5"></i>
+              </p>
+              <p class="text-dark-01 font-medium mr-12">Hours</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <p class="text-dark-01 font-extrabold text-5xl">
+                25
+                <i class="fa-solid fa-ellipsis-vertical w-6 ml-5"></i>
+              </p>
+              <p class="text-dark-01 font-medium mr-12">Minutes</p>
+            </div>
+
+            <div class="flex flex-col items-center">
+              <p class="text-dark-01 font-extrabold text-5xl">08</p>
+              <p class="text-dark-01 font-medium">Seconds</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- cards -->
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-12">
+
+          <!-- card-1 -->
+          <div class="card border border-dark-01 border-opacity-10 rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit6.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center gap-6">
+              <h2 class="card-title text-dark-01 font-bold text-2xl">12.90$ - 18.85$</h2>
+              <p class="text-dark-01 opacity-60 font-medium">Apples</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <button class="text-primary-red font-bold text-xs border-none">
+                Details
+              </button>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="card border border-dark-01 border-opacity-10 rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit7.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center gap-6">
+              <h2 class="card-title text-dark-01 font-bold text-2xl">12.90$ - 18.85$</h2>
+              <p class="text-dark-01 opacity-60 font-medium">Orange</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <button class="text-primary-red font-bold text-xs border-none">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <!-- card-3 -->
+          <div class="card border border-dark-01 border-opacity-10 rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit8.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center gap-6">
+              <h2 class="card-title text-dark-01 font-bold text-2xl">12.90$ - 18.85$</h2>
+              <p class="text-dark-01 opacity-60 font-medium">Red Dragon</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <button class="text-primary-red font-bold text-xs border-none">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <!-- card-4 -->
+          <div class="card border border-dark-01 border-opacity-10 rounded-lg">
+            <figure class="px-10 pt-10">
+              <img src="./images/fruit9.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center gap-6">
+              <h2 class="card-title text-dark-01 font-bold text-2xl">12.90$ - 18.85$</h2>
+              <p class="text-dark-01 opacity-60 font-medium">Banana</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <button class="text-primary-red font-bold text-xs border-none">
+                Details
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
 
     <footer></footer>
     
